@@ -28,7 +28,7 @@ def nota_mas_alta (arr)
         notas_alumno = []
         # Utilizando each_with_index, recorremos el arreglo por elemento e indice 
         ele.each_with_index do |element, index|
-            # Excluimos el primer registro (contiene el nombre)
+            # Excluimos el primer elemento del arreglo (contiene el nombre)
             next if index == 0
             # Agregamos al arreglo "notas_alumno" las notas como integer
             notas_alumno.push(element.to_i)
